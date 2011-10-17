@@ -1,2 +1,3 @@
 config/config.yml
 public/github.php
+.DS_Store
