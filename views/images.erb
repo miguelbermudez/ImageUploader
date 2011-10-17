@@ -2,7 +2,7 @@
 
 <% @images.each do |image| %>
 	<p>
-		<img src="http://<%= @aws_bucket %>.s3.amazonaws.com/<%= image.path %>" /><br />
+                <img src="<%= image.s3_url%>" </><br />
 		<%= image.caption %>
 	</p>
 <% end %>

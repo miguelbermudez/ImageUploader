@@ -5,11 +5,12 @@ require './models'
 
 class Application < Sinatra::Base
   $config = YAML.load(File.read('./config/config.yml'))
-  
+  $aws_bucket = $config[:bucket]
   
   #set utf-8 for outgoing
   before do 
     headers "Content-Type" => "text/html; charset=utf-8"
+    $rooturl = url('/')  
   end 
   
   get '/' do
@@ -18,10 +19,12 @@ class Application < Sinatra::Base
   
   get '/images' do
     @images = Image.all
+    @bucket = $aws_bucket
     erb :images
   end
   
   get '/images/new' do
+     @newurl = url('/images')
      erb :new_image
   end
   
