@@ -1,0 +1,427 @@
+/* 
+Title:		Master styles for screen media
+Author: 	miguel@miguelbermudez.com
+
+COLOR CONSTANTS
+	
+	HM Brown (text): #442E1F
+	HM Dark Brown (headings, links) #2D1F15
+	HM Background: #FFF1D1
+	Mid Blue (header) #333399
+	Light blue (top navigation) #CCCCFF
+	Mid grey: #666666
+	
+
+*/
+
+body {
+	background: #FFF1D1;
+
+	/*color: #444;*/
+	color: #442E1F;
+	/* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+	font-family: "skolar-1","skolar-2", Arial;
+	font-size: 62.5%;
+	font-size: 16px;
+	line-height: 1.5em;
+	}
+	
+h1 {
+	font-size: 2.75em;
+	/*font-style: italic;*/
+	font-weight: 100;
+	letter-spacing: 0.175em;
+	line-height: 1.1em;
+	margin: 0.1em 0 0;
+	padding: 0.3em 0 0.65em 0.3em;
+	}
+	
+h2 {
+	font-size: 1.75em;
+	line-height: 1.1em;
+	margin: 2em 0 0.5em;
+	}
+	
+/*
+h1+img, h2+img {
+	margin-top: 0.75em;
+	}
+*/
+h3 {
+	font-size: 1.125em;
+	margin-top: 0.375em;
+	}
+
+h4 {
+	font-weight: bold;
+	font-size: 1em;
+	margin-top: 0.5em;
+	}
+h1, h2, h3, p, p.intro { 
+ 	color: #442E1F;
+ 	text-rendering: optimizeLegibility; 
+	}
+
+h1, h2, h3, h4 {
+	color: #2D1F15;
+	}
+	
+small {
+	display: block;
+	font-size: 0.9em;
+	letter-spacing: 0.05em;
+	margin: 2.2em 0 -0.2em;
+	line-height: 1.75;
+	opacity: 0.6;
+	}
+
+p, ul, ol, form {
+	margin: 0.75em 0 1em;
+	}
+
+section {
+	/* display: block !important; */
+	}
+
+ul {
+	list-style: none outside none;
+	line-height: 1.5;
+	}
+
+li {
+	margin-bottom: 0.75em;
+	}
+
+li.active {
+	background: #3399CC;
+	padding: 9px;
+	text-shadow: none;
+	}	
+	
+	li.active a {
+		color: #FFF1D1;
+		}
+		li.active a:hover {
+			border: 1px solid #3399CC;
+			color: #2D1F15;
+			}
+		
+ol {
+	/*list-style-position: outside;*/
+	list-style-type: disc;
+	list-style-position: inside;
+	padding-left: 1em;
+	text-indent: -1em;
+	}
+	
+blockquote {
+	font-style: italic;
+	margin-right: 5em;
+	}
+blockquote:before {
+	font-family: Monaco,Consolas,"Lucida Console",monospace;
+	content: '\201C';
+	font-size: 2.1em;
+	font-style: normal;
+	text-indent: -0.75em;
+	float: left;
+	opacity: 0.3;
+	line-height: 1.25;
+	}
+
+/* links */
+a {
+	text-decoration: none;	
+	}
+
+	a:link, a:visited {
+		border-bottom: 1px dashed #2D1F15;
+		color: #2D1F15;
+		outline: none;
+		}
+	a:hover {
+		border-bottom-color: #3399CC;
+		color: #39c;
+		}		
+
+/* page structure
+--------------------------------------------- */
+#main {
+	
+	}
+
+#masthead {
+	border-bottom: 0.15em ridge #2D1F15;
+	height: auto;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	}
+	
+	#masthead img {
+		
+		padding: 10px 0 0 0;
+		}
+	
+	#masthead a {
+		border: none;
+		}
+
+#welcome {
+	text-align: right;
+	margin-bottom: 3em;
+	}
+	#welcome img {
+		margin-bottom: 1em;
+		}
+	#welcome img.intag {
+		margin-bottom: -0.2em;
+		}
+	#welcome h1 {
+		border-top: none;
+		font-weight: 100;
+		margin-top: 0.5em;
+		}
+	#welcome h2, #welcome h3 {
+		font-weight: 100;
+		}
+
+#page-aboutus header p {
+	margin-bottom: 1px;
+	margin-top: 1px;
+	}
+
+#page-aboutus header h2 a {
+	border: none;
+	cursor: default;
+	}
+	#page-aboutus header h2 a:hover {
+		color: #2D1F15;
+		}
+
+#page-aboutus h1 {
+	margin-bottom: 1px;
+	padding-bottom: 1px;
+	}
+		
+#page-aboutus img {
+	/*padding-right: 10px;*/
+	}
+
+#page-aboutus section img {
+	height: 248px;
+	width: 938px;
+	}
+	
+#page-guestinfo h1 {
+	padding-bottom: 0.025em;
+	}
+
+#page-aboutus .insection {
+	display: block;
+	float: right;
+	margin: 1px 1px 1px 1px;
+	width: auto;
+	}
+
+#page-ceremonyrecption h1 {
+	padding-bottom: 1.17em;
+	}
+	
+#page-ceremonyrecption h2 {
+	margin-top: 1em;
+	}
+
+#page-ceremonyrecption dl {
+	margin-bottom: 2.0em;
+	}
+	#page-ceremonyrecption dd {
+		margin-bottom: 0.5em;
+		}
+	
+#page-guestinfo h2 {
+	border-bottom: 1px solid #2D1F15;
+	}
+	
+#page-guestinfo ul, #page-aboutus #flowtabs ul{
+	font-size: 0.85em;
+	height: 2.0em;
+	margin-left: 70px;
+	margin-bottom: 1em;
+	}
+
+#page-guestinfo  ul li {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+
+#whattodo{
+	}
+	#whattodo img {
+		
+		margin-bottom: 15px;
+		}
+	
+	#whattodo iframe {
+		border: 1px solid #2D1F15;
+		}
+		
+	#whattodo ul {
+		margin-left: 0;
+		margin-top: 30px;
+		}
+		
+		#whattodo ul li {
+			display: block;
+			margin-left: 0;
+			width: 100%;
+			}
+		
+	#whattodo  ul p {
+		margin-left: 30px;
+		}
+				
+	#whattodo .lighter {
+		margin-left: 0;
+		opacity: 0.6;
+		}
+
+#wheretoeat {
+	display: block;
+	margin-top: 3em;
+	}
+	#wheretoeat h3 {
+		margin-top: 1em;
+		}	
+	#wheretoeat ul {
+		margin: 1em 0;
+		}
+		#wheretoeat ul li {
+			display: block;
+			margin-left: 0;
+			width: 100%;
+			}
+	
+footer {
+
+	display: block;
+	/*margin: 3em auto 0 auto;*/
+	height: 240px;
+	}
+	
+	footer div {
+		background: #2D1F15;
+		bottom: -1px;
+		height: 20px;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		}
+
+/* header 
+--------------------------------------------- */
+
+#logo {
+	
+	}
+
+/* navigation */
+nav {
+	margin-top: 35px;
+	}
+
+nav li {
+	float: left;
+	position: relative;
+	margin-left: 40px;
+	padding-top: 9px;
+	}
+
+/* scrollable structure
+--------------------------------------------- */
+.scrollable {
+	/* required settings */
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	/* margin: 0 10px 0 10px; */
+	margin: 0; 
+	width: 940px;
+	height: 60em;
+	}		
+	.scrollable .items {
+		display: block;
+		float: left;
+		clear: both;
+		margin: 0;
+		padding: 0;
+		position:absolute;
+		/* this cannot be too large */
+		width: 20000em;
+		}
+	.scrollable .page {
+		float: left;
+		display: block;
+		width: 940px;
+		height: 60em;
+		}
+
+#flowtabs ul li{
+	float: left;
+	padding-left: 20px;
+	}
+
+#flowtabs li a.current{		
+	color: #3399CC;
+	}
+
+a.browse {
+	background: url("../img/arrowBtns_large.png") no-repeat scroll 0 0;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	margin: 0;
+	position: absolute;
+	top: 431px;
+	width: 31px;
+	z-index: 10;
+	}
+	
+a.left {
+	/* left: 132px;!important */
+	margin-left: 25px;
+	}
+
+a.right {
+	background-position:  0 -30px;
+	margin-left: 883px;
+	}
+
+a.disabled {
+	visibility: hidden !important;
+	}
+
+
+/* misc  
+--------------------------------------------- */
+
+.hmborder {
+	border: 1px solid #2D1F15;
+	}
+
+hr, .hide {
+	display: none;
+	}	
+a img {
+	border: none;
+	}
+	
+/* self-clear floats */
+.group:after {
+	content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+    }
+	

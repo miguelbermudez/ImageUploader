@@ -1,0 +1,19 @@
+/* 
+CSS3 + vendor-specific styles
+
+-webkit	 	Safari
+-moz 	 	Firefox
+*/
+
+.lettertype, h1 {
+	text-shadow: 0px 1px 1px #FFF8F3;
+    color: #2D1F15;
+	}
+	.lettertype a:hover {
+		text-shadow: 0px 1px 1px #FFF8F3;
+		color: #256F8C
+		}
+
+#welcome h1 {
+	text-shadow: none;
+	}
